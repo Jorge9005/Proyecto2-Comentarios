@@ -20,36 +20,51 @@
         </nav>
     </header>
 
-    <div class="row">
-        <div class="col-md-6">
-            <form>
-                <div class="form-group"> <!--Campos-->
-                    <label for="inputUserName">Ingresa tu Usuario</label>
-                    <input type="text" class="form-control" id="inputUserName" placeholder="Insertar usuario">
-                    <label for="inputDescription">¡Deja tu comentario!</label>
+    <div class="hero-wrapper">
+        <div class="hero">
+            <div class="hero-inner">
+                <img src="assets/img/wallpaper-ferrari.jpg" alt="wallpaper" class="img-fluid max-width: 100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="p-md-3" id="formulario">
+            <form class="text-center d-flex justify-content-center p-md-3">
+                <div class="form-group col-md-6 "> <!--Campos-->
+                    <label for="inputUserName" class="form-label">Ingresa tu Usuario</label>
+                    <input type="text" class="form-control mb-3" id="inputUserName" placeholder="Insertar usuario">
+                    <label for="inputDescription" class="form-label">¡Deja tu comentario!</label>
                     <input type="text" class="form-control" id="inputDescription" placeholder="Insertar comentario">
-                </div>
-                <div> <!--Button-->
-                    <button type="button" class="btn btn-success mt-3" id="saveBtn">Guardar comentario</button>
-                </div>
+                    <button type="button" class="btn btn-danger mt-3" id="saveBtn">Guardar comentario</button>
             </form>
         </div>
         <div class="col-md-12 mt-4">
             <table class="table table-bordered text-center">
-                <thead class="bg-primary"> <!--Se utiliza para identificar cuales son las celdas de encabezado, pero realmente no es necesario para que las celdas que queremos en negritas se muestren en este formato. Lo que hace que estas celdas se vean en negritas es la etiqueta. <th>-->
+                <thead class="bg-warning"> <!--Se utiliza para identificar cuales son las celdas de encabezado, pero realmente no es necesario para que las celdas que queremos en negritas se muestren en este formato. Lo que hace que estas celdas se vean en negritas es la etiqueta. <th>-->
                     <th>ID</th>
                     <th>Usuario</th>
                     <th>Comentario</th>
                     <th>Acciones</th>
                 </thead>
-                <tbody id="tableBody" class="bg-light"><!--Se utiliza para identificar todo lo que va después del thead, pero de igual manera no es necesario para realizar tablas, solo se utiliza para tener organizado el códgio.-->
+                <tbody id="tableBody" class="bg-dark-subtle"><!--Se utiliza para identificar todo lo que va después del thead, pero de igual manera no es necesario para realizar tablas, solo se utiliza para tener organizado el códgio.-->
                 </tbody>
             </table>
         </div>
     </div>
 
-    <footer>
-        
+    <footer id="contact">
+        <h1>Contáctanos en nuestras redes sociales</h1>
+        <div class="social-wrapper row text-center mt-4">
+            <a href="https://www.facebook.com/Ferrari/" class="col-4">
+                <img class="footer-icons" width="70px" src="assets/img/fb_icon.png" alt="fb">
+            </a>
+            <a href="https://www.instagram.com/ferrari//" class="col-4">
+                <img class="footer-icons" width="70px" src="assets/img/ig_icon.png" alt="ig">
+            </a>
+            <a href="https://www.ferrari.com/es-ES" class="col-4">
+                <img class="footer-icons" width="70px" src="assets/img/logo-ferrari.png" alt="page">
+            </a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

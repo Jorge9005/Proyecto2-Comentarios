@@ -13,7 +13,7 @@
 <body>
     <header class="header-wrapper">
         <nav class="navbar navbar-nav navbar-light bg-dark ms-auto">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#formulario">
                 <img src="assets/img/logo-ferrari.png" alt="logo" class="img-logo" width="60px" height="60px">
                 Ferrari
             </a>
@@ -30,17 +30,17 @@
 
     <div class="p-md-3" id="formulario">
             <form class="text-center d-flex justify-content-center p-md-3">
-                <div class="form-group col-md-6 "> <!--Campos-->
-                    <label for="inputUserName" class="form-label">Ingresa tu Usuario</label>
+                <div class="form-group col-md-6"> <!--Campos-->
+                    <label for="inputUserName" class="form-label col-md-12">Ingresa tu Usuario</label>
                     <input type="text" class="form-control mb-3" id="inputUserName" placeholder="Insertar usuario">
-                    <label for="inputDescription" class="form-label">¡Deja tu comentario!</label>
+                    <label for="inputDescription" class="form-label col-md-12">¡Deja tu comentario!</label>
                     <input type="text" class="form-control" id="inputDescription" placeholder="Insertar comentario">
-                    <button type="button" class="btn btn-danger mt-3" id="saveBtn">Guardar comentario</button>
+                    <button type="button" class="btn-guardar mt-3" id="saveBtn">Guardar comentario</button>
             </form>
         </div>
         <div class="col-md-12 mt-4">
             <table class="table table-bordered text-center">
-                <thead class="bg-warning"> <!--Se utiliza para identificar cuales son las celdas de encabezado, pero realmente no es necesario para que las celdas que queremos en negritas se muestren en este formato. Lo que hace que estas celdas se vean en negritas es la etiqueta. <th>-->
+                <thead> <!--Se utiliza para identificar cuales son las celdas de encabezado, pero realmente no es necesario para que las celdas que queremos en negritas se muestren en este formato. Lo que hace que estas celdas se vean en negritas es la etiqueta. <th>-->
                     <th>ID</th>
                     <th>Usuario</th>
                     <th>Comentario</th>
@@ -52,16 +52,16 @@
         </div>
     </div>
 
-    <footer id="contact">
-        <h1>Contáctanos en nuestras redes sociales</h1>
-        <div class="social-wrapper row text-center mt-4">
-            <a href="https://www.facebook.com/Ferrari/" class="col-4">
+    <footer class="mt-4">
+        <h1>Contáctanos</h1>
+        <div class="social-wrapper text-end">
+            <a href="https://www.facebook.com/Ferrari/" class="p-2">
                 <img class="footer-icons" width="70px" src="assets/img/fb_icon.png" alt="fb">
             </a>
-            <a href="https://www.instagram.com/ferrari//" class="col-4">
+            <a href="https://www.instagram.com/ferrari//" class="p-2">
                 <img class="footer-icons" width="70px" src="assets/img/ig_icon.png" alt="ig">
             </a>
-            <a href="https://www.ferrari.com/es-ES" class="col-4">
+            <a href="https://www.ferrari.com/es-ES" class="p-2">
                 <img class="footer-icons" width="70px" src="assets/img/logo-ferrari.png" alt="page">
             </a>
         </div>

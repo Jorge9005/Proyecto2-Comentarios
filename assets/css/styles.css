@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Climate+Crisis&family=Poppins&family=Titillium+Web:ital@1&display=swap');
+
 .navbar-brand{
     color: white;
 }
@@ -11,7 +13,29 @@ body{
 }
 
 footer{
+    font-family: 'Anton', sans-serif;
+    color: black;
+    text-align: right;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer h1{
+    margin-right: 1.7rem;
+    text-transform: uppercase;
+}
+label{
+    background-color: black;
     color: white;
-    text-align: center;
-    margin-top: 4rem;
+}
+
+thead{
+    background-color: black;
+    color: white;
+}
+
+.btn-guardar{
+    border-radius: 5px;
+    width: 15rem;
+    height: 2rem;
 }

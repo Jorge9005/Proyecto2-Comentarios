@@ -11,10 +11,17 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="header-wrapper">
+        <nav class="navbar navbar-nav navbar-light bg-dark ms-auto">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo-ferrari.png" alt="logo" class="img-logo" width="60px" height="60px">
+                Ferrari
+            </a>
+        </nav>
+    </header>
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <form>
                 <div class="form-group"> <!--Campos-->
                     <label for="inputUserName">Ingresa tu Usuario</label>
@@ -23,28 +30,31 @@
                     <input type="text" class="form-control" id="inputDescription" placeholder="Insertar comentario">
                 </div>
                 <div> <!--Button-->
-                    <div>
-                        <button type="button" class="btn btn-primary" id="saveBtn">Guardar comentario</button>
-                    </div>
+                    <button type="button" class="btn btn-success mt-3" id="saveBtn">Guardar comentario</button>
                 </div>
             </form>
         </div>
-        <div class="col-md-12">
-            <table>
-                <thead> <!--Se utiliza para identificar cuales son las celdas de encabezado, pero realmente no es necesario para que las celdas que queremos en negritas se muestren en este formato. Lo que hace que estas celdas se vean en negritas es la etiqueta. <th>-->
-                    <tr>
-                        <th>ID</th>
-                        <th>Usuario</th>
-                        <th>Comentario</th>
-                        <th>Acciones</th>
-                    </tr>
+        <div class="col-md-12 mt-4">
+            <table class="table table-bordered text-center">
+                <thead class="bg-primary"> <!--Se utiliza para identificar cuales son las celdas de encabezado, pero realmente no es necesario para que las celdas que queremos en negritas se muestren en este formato. Lo que hace que estas celdas se vean en negritas es la etiqueta. <th>-->
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Comentario</th>
+                    <th>Acciones</th>
                 </thead>
-                <tbody id="tableBody"><!--Se utiliza para identificar todo lo que va después del thead, pero de igual manera no es necesario para realizar tablas, solo se utiliza para tener organizado el códgio.-->
+                <tbody id="tableBody" class="bg-light"><!--Se utiliza para identificar todo lo que va después del thead, pero de igual manera no es necesario para realizar tablas, solo se utiliza para tener organizado el códgio.-->
                 </tbody>
             </table>
         </div>
     </div>
 
+    <footer>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
